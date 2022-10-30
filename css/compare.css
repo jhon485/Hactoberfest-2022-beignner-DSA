@@ -1,0 +1,230 @@
+*{
+    margin :0;
+    padding :0;
+    box-sizing:border-box;
+
+}
+li {
+    list-style-typr:none;
+}
+a{
+    text-decoration:none;
+}
+
+body{
+    fort-family:sans-serif;
+    height:100vh;
+    diaplay:flex;
+    flex-direction:column;
+}
+
+header{
+    height:60px;
+}
+.navbar{
+    height:1005;
+    width:100%;
+    padding :10px 20px;
+}
+
+.navbar ul li{
+    margin-lefft:15px;
+}
+.navbar ul li a{
+    color:black;
+
+}
+.link:hover{
+    text-decoration:underline;
+}
+
+.circular-shadow{
+    height :40px;
+    width:40px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+}
+
+.circular-shadow:hover{
+    background-color:rgba(0,0,0,0.1);
+}
+.menu-icon,
+.user-icon span{
+    font-size:18px;
+}
+
+.user-icon span{
+    color:white;
+}
+
+.user-icon{
+    background-color:#EF6C00;
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    text-align:center;
+    line-height:30px;
+}
+
+
+.content-section{
+    flex-grow:1;
+    display:flex;
+    justify-content:center;
+    align-item:center;
+}
+
+.content-wraper{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding-bottomo:100px;
+}
+
+.logo-img{
+    width:300px;
+    margin-bottom:20px;
+}
+
+.search-bar{
+    border:1px solid lighgray;
+    width:600px;
+    height :45px;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    padding-left:15px;
+}
+
+.search-bar:hover{
+    box-shadow:0px 0px 4px 0px #B5B5B5;
+}
+
+.search-bar i{
+    font-size:18px;
+    color:gray;
+    margin-right:15px;
+    cursor:pointer;
+}
+
+.search-bar input:focus{
+    outline:none;
+}
+
+.search-btns{
+    margin-top:20px;
+}
+
+.search-btns button{
+    height :40px;
+    font-size:14px;
+    border:none;
+    border-radius:5px;
+    margin-left:10px;
+    color:black;
+    background-color:#F2F3F4;
+}
+
+.search-btns button:hover{
+    border:1px solid lightgray;
+}
+
+.google-search-btn{
+    width:120px;
+}
+
+.lucky-search-btn{
+    width:140px;
+}
+
+.language{
+    margin-top:20px;
+    font-size:14px;
+}
+
+.language p a{
+    color : blue;
+}
+
+.language p a:hover{
+    text-decoration:underline;
+}
+footer{
+    background-color: #F2F2F2;
+    height:10px;
+}
+
+.footer-content{
+    diaplay:flex;
+    align-items:center;
+    padding:5px;
+}
+
+.upper-footer{
+    height :50%;
+    border-bottom:1px solid lightgray;
+}
+
+.upper-footer p{
+    color :rgb(180,180,180);
+    font-size:14px;
+}
+
+.lower-footer ul li a:hover{
+    text-decoration:underline;
+}
+
+.lower-left-footer{
+    display:flex;
+}
+
+.lower-right-footer li {
+    margin-left:155px;
+}
+
+@media only screen and (max-width:650px){
+    .nav ul {
+        font-size:10px;
+    }
+    .menu-icon,
+    .user-icon { 
+        span:14px;
+    }
+
+    .circular-shadow{
+        height:30px;
+        width:30px;
+    }
+    .serch-bar i{
+        fonr-size:14px;
+    }
+    .serch-btns button{
+        height:30px;
+        font-size:12px;
+    }
+
+    .google-search-btn{
+        width:100px;
+    }
+    .lucky-search-btn{
+        width:120px;
+    }
+    .language{
+        font-size:12px;
+    }
+    footer{
+        height:15px;
+    }
+    .lower-footer{
+        height:10px;
+        flex-direction:column;
+    }
+
+    .lower-left-footer{
+        flex-wrap:wrap;
+    }
+
+}
